@@ -1,0 +1,57 @@
+@import "material-color";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+%colour {
+	color: #fff;
+	padding: 1rem;
+}
+
+.colour-purple {
+	@extend %colour;
+	background-color: material-color(deep-purple, 500);
+}
+
+.colour-blue {
+	@extend %colour;
+	background-color: material-color(blue, 500);
+}
+
+.colour-green {
+	@extend %colour;
+	background-color: material-color(green, 500);
+}
+
+.colour-yellow {
+	@extend %colour;
+	background-color: material-color(amber, 500);
+}
+
+.colour-orange {
+	@extend %colour;
+	background-color: material-color(orange, 500);
+}
+
+.colour-red {
+	@extend %colour;
+	background-color: material-color(red, 500);
+}
